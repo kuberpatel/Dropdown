@@ -1,3 +1,4 @@
+/* Styles for the drop-down button */
 .dropbtn {
   background-color: #4ca1f7;
   width: 180px;
@@ -7,26 +8,29 @@
   border: none;
 }
 
+/* Styles for the dropdown container */
 .dropdown {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #3494E6;  /* fallback for old browsers */
+  background: #3494E6;  /* Background gradient */
+  /* Note: The background gradient syntax includes fallbacks for older browsers */
   background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   height: 300px;
 }
 
+/* Styles for the dropdown content */
 .dropdown-content {
-   display: none;
+  display: none; /* Initially hidden */
   background-color: #f1f1f1;
   width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1; 
- 
 }
 
+/* Styles for dropdown links */
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -34,17 +38,20 @@
   display: block;
 }
 
+/* Styles for hovered dropdown links */
 .dropdown-content a:hover {
-  background: #3494E6;  /* fallback for old browsers */
+  background: #3494E6;  /* Background gradient on hover */
   background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   color: white;
+  color: white;
 }
 
+/* Show dropdown content on hover */
 .dropdown:hover .dropdown-content {
   display: block;
-} 
+}
 
+/* Change background color of the drop-down button on hover */
 .dropdown:hover .dropbtn {
-  background-color:#0a7bed;
+  background-color: #0a7bed;
 }
